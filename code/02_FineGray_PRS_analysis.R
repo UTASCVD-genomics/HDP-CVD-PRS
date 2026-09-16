@@ -38,6 +38,11 @@
 # The PRS-by-HDP-history interaction coefficient is not reported in the
 # manuscript.
 #
+# # Cardiac arrest was not analysed because no events occurred among women with
+# a history of HDP. Peripheral vascular disease was analysed where estimable
+# but omitted from the forest plots because only one event occurred among women
+# with a history of HDP, resulting in a highly sparse subgroup estimate.
+#
 # Individual-level Busselton Health Study genotype, phenotype, pregnancy-history
 # and linked health data are subject to data-access, governance and privacy
 # restrictions and are not distributed with this repository.
