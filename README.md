@@ -94,7 +94,7 @@ For each specific first CVD outcome:
 * other first CVD outcomes were treated as competing events; and
 * women without an incident CVD event were censored.
 
-Models included the PRS, HDP history and a PRS-by-HDP-history term to obtain PRS effect estimates separately for women with and without a history of HDP. The PRS-by-HDP-history interaction coefficient itself was not reported in the manuscript.
+Models included the PRS, HDP history and a PRS-by-HDP-history term to obtain PRS effect estimates separately for women with and without a history of HDP. 
 
 Models were adjusted for:
 
