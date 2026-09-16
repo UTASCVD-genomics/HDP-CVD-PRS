@@ -38,10 +38,9 @@
 # The PRS-by-HDP-history interaction coefficient is not reported in the
 # manuscript.
 #
-# Cardiac arrest was not analysed because no events occurred among women with
-# a history of HDP. Peripheral vascular disease was analysed where estimable
-# but omitted from the forest plots because only one event occurred among women
-# with a history of HDP, resulting in a highly sparse subgroup estimate.
+# Peripheral vascular disease and cardiac arrest were excluded from the PRS
+# association analyses because of sparse event numbers among women with a
+# history of HDP (n = 1 and n = 0, respectively).
 #
 # Individual-level Busselton Health Study genotype, phenotype, pregnancy-history
 # and linked health data are subject to data-access, governance and privacy
@@ -80,7 +79,13 @@ covar_sets <- c("FULL")
 min_total_interest_events <- 5
 min_group_interest_events <- 1
 
-exclude_from_forest <- c("Peripheral_vascular")
+# Outcomes excluded from PRS association analyses because of sparse event
+# numbers among women with a history of HDP.
+exclude_from_analysis <- c("Peripheral_vascular", "Cardiac_arrest")
+
+# No additional outcome exclusions are required at the plotting stage because
+# sparse outcomes are removed before model fitting.
+exclude_from_forest <- character(0)
 
 COL_NOHDP <- "#1F78B4"
 COL_HDP   <- "#D62728"
@@ -896,6 +901,7 @@ run_fg <- function(prs_name, covar_set = c("FULL")) {
   
   subtypes_valid <- counts_tbl %>%
     filter(
+      !CVD_subtype %in% exclude_from_analysis,
       events_NoHDP >= min_group_interest_events,
       events_HDP >= min_group_interest_events,
       events_total >= min_total_interest_events
