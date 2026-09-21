@@ -17,4 +17,3 @@ Participant-level data, individual PRS values, participant identifiers, genotype
 
 By default, generated outputs in this directory are excluded from Git tracking by the repository `.gitignore`.
 
-Aggregate outputs should only be added to the public repository after confirming that they are suitable for public release under the relevant Busselton Health Study data-governance requirements.
