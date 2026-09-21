@@ -29,14 +29,12 @@
 # censored. Polygenic risk scores are standardised to mean 0 and standard
 # deviation 1 in the analytical cohort.
 #
-# Models include the PRS, HDP history, a PRS-by-HDP-history term, age, age
-# squared, systolic blood pressure, waist circumference, total cholesterol to
-# HDL-cholesterol ratio, diabetes, lipid-lowering medication use, ever-smoking
-# status, and genetic principal components 1-10. Group-specific PRS effects
-# are estimated for women with and without a history of HDP and are reported
-# as subdistribution hazard ratios with 95% confidence intervals and p-values.
-# The PRS-by-HDP-history interaction coefficient is not reported in the
-# manuscript.
+# Models include age, age squared, systolic blood pressure, waist circumference,
+# total cholesterol to HDL-cholesterol ratio, diabetes, lipid-lowering medication
+# use, ever-smoking status, and genetic principal components 1-10. PRS effects
+# are estimated separately for women with and without a history of HDP and are
+# reported as subdistribution hazard ratios with 95% confidence intervals and
+# p-values.
 #
 # Peripheral vascular disease and cardiac arrest were excluded from the PRS
 # association analyses because of sparse event numbers among women with a
@@ -45,7 +43,7 @@
 # Individual-level Busselton Health Study genotype, phenotype, pregnancy-history
 # and linked health data are subject to data-access, governance and privacy
 # restrictions and are not distributed with this repository.
-# =============================================================================
+# =============================================================================================
 
 suppressPackageStartupMessages({
   library(dplyr)
