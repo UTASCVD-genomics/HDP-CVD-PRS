@@ -28,7 +28,7 @@ This repository contains code for:
 Repository structure:
 
 ```text
-HDP-CVD-PRS/
+PE-CVD-PRS/
 ├── README.md
 ├── .gitignore
 ├── CITATION.cff
