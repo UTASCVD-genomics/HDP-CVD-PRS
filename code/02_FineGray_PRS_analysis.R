@@ -12,7 +12,7 @@
 # Peter J. Meikle, Corey Giles, Hoang T. Phan, Shaun P. Brennecke,
 # Eric K. Moses, and Phillip E. Melton
 #
-# Repository: https://github.com/UTASCVD-genomics/PE-CVD-PRS
+# Repository: https://github.com/UTASCVD-genomics/HDP-CVD-PRS
 #
 # This script implements the primary competing-risk analysis reported in the
 # manuscript and generates the corresponding result tables and forest plots.
