@@ -12,7 +12,7 @@ type: software
 
 authors:
   - family-names: Krishnamurthy
-    given-names: Gayathry
+  - given-names: Gayathry
 
 version: 1.0.0
 
