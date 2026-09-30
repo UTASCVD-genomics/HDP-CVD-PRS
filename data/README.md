@@ -8,7 +8,7 @@ The Fine-Gray analysis script expects an authorised local analysis dataset conta
 
 ### Follow-up time
 
-The `follow_up_years` variable represents time from the 1994–95 BHS baseline survey to the relevant time-to-event endpoint. For participants who experienced incident CVD, follow-up ended at the first recorded CVD event. For participants without incident CVD, follow-up ended at the recorded date of death, where available, or at the administrative end of follow-up, defined as 27 years after baseline (end of 2022).
+The `follow_up_years` variable represents time from the 1994-95 BHS baseline survey to the relevant time-to-event endpoint. For participants who experienced incident CVD, follow-up ended at the first recorded CVD event. For participants without incident CVD, follow-up ended at the recorded date of death, where available, or at the administrative end of follow-up, defined as 27 years after baseline (end of 2022).
 
 For the Fine-Gray analyses of specific first CVD outcomes, the CVD subtype of interest was treated as the event of interest, while alternative first CVD outcomes were treated as competing events. Participants without an incident CVD event were censored at their defined follow-up time.
 
@@ -22,4 +22,5 @@ The public repository does not contain:
 - mortality records
 - pregnancy-history records
 - participant ID mapping files
+  
 Researchers interested in accessing BHS data should follow the relevant BHS data-access and governance procedures.
